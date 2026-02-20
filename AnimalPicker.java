@@ -12,5 +12,8 @@ public class AnimalPicker {
         } else if (choice.equalsIgnoreCase("cat")) {
             System.out.println("CAT ASCII ART HERE");
         }
+        else {
+    System.out.println("Error: Invalid option.");
+}
     }
 }

@@ -10,16 +10,18 @@ public class AnimalPicker {
         // Keep asking until valid input
         while (!(choice.equalsIgnoreCase("dog") ||
                  choice.equalsIgnoreCase("cat") ||
-                 choice.equalsIgnoreCase("fish"))) {
+                 choice.equalsIgnoreCase("fish") ||
+                 choice.equalsIgnoreCase("bird"))) {
 
-            System.out.println("Which animal would you like to see? (dog, cat, fish)");
+            System.out.println("Which animal would you like to see? (dog, cat, fish, bird)");
             choice = input.nextLine();
 
             if (!(choice.equalsIgnoreCase("dog") ||
                   choice.equalsIgnoreCase("cat") ||
-                  choice.equalsIgnoreCase("fish"))) {
+                  choice.equalsIgnoreCase("fish") ||
+                  choice.equalsIgnoreCase("bird"))) {
 
-                System.out.println("Error: Please enter dog, cat, or fish.");
+                System.out.println("Error: Please enter dog, cat, fish, or bird.");
                 System.out.println();
             }
         }
@@ -57,6 +59,26 @@ public class AnimalPicker {
             System.out.println(": © ):´;      ¸  {");
             System.out.println(" `·.¸ `·  ¸.·´\\`·¸)");
             System.out.println("     `\\\\´´\\¸.·´");
+        }
+
+        else if (choice.equalsIgnoreCase("bird")) {
+            System.out.println("Here is your bird:\n");
+            System.out.println("                           .\n" + //
+                                "                          | \\/|\n" + //
+                                "  (\\   _                  ) )|/|\n" + //
+                                "      (/            _----. /.'.'\n" + //
+                                ".-._________..      .' @ _\\  .'\n" + //
+                                "'.._______.   '.   /    (_| .')\n" + //
+                                "  '._____.  /   '-/      | _.'\n" + //
+                                "   '.______ (         ) ) \\\n" + //
+                                "     '..____ '._       )  )\n" + //
+                                "        .' __.--\\  , ,  // ((\n" + //
+                                "        '.'  mrf|  \\/   (_.'(\n" + //
+                                "                '   \\ .'\n" + //
+                                "                 \\   (\n" + //
+                                "                  \\   '.\n" + //
+                                "                   \\ \\ '.)\n" + //
+                                "                    '-'-'");
         }
 
         input.close();
